@@ -1,0 +1,47 @@
+PATH
+  remote: .
+  specs:
+    m-git (2.5.2)
+      colored2 (~> 3.1)
+      peach (~> 0.5)
+      tty-pager (~> 0.12)
+
+GEM
+  remote: https://gems.ruby-china.com/
+  specs:
+    ansi (1.5.0)
+    builder (3.2.4)
+    colored2 (3.1.2)
+    minitest (5.14.1)
+    minitest-reporters (1.4.2)
+      ansi
+      builder
+      minitest (>= 5.0)
+      ruby-progressbar
+    peach (0.5.1)
+    rake (10.5.0)
+    ruby-progressbar (1.10.1)
+    strings (0.2.0)
+      strings-ansi (~> 0.2)
+      unicode-display_width (~> 1.5)
+      unicode_utils (~> 1.4)
+    strings-ansi (0.2.0)
+    tty-pager (0.14.0)
+      strings (~> 0.2.0)
+      tty-screen (~> 0.8)
+    tty-screen (0.8.1)
+    unicode-display_width (1.7.0)
+    unicode_utils (1.4.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.17)
+  m-git!
+  minitest (~> 5.14.1)
+  minitest-reporters (~> 1.4.2)
+  rake (~> 10.0)
+
+BUNDLED WITH
+   1.17.2

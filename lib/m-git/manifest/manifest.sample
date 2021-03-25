@@ -1,0 +1,67 @@
+--- manifest.json ---
+{
+  "remote": "https://github.com/baidu",//远程仓库地址
+  "version":1,//配置文件版本
+  "branch": "master",//配置仓库当前分支
+  "dest": "Sources",//本地仓库相对mgit根目录存放路径
+  "repositories": {//源码列表，包含git仓库和非git仓库
+    "Watch": {
+      "remote-path": "watch"//远程仓库名，对于需要mgit管理的仓库是必需字段
+    },
+    "BBAAccount": {
+      "remote-path": "bbaaccount",
+      "config_repo": true//标志是否是包含配置表的配置仓库
+    },
+    "Script": {
+      "remote-path": "script",
+      "remote": "https://github.com/baidu/some_script",//可选，覆盖最外层定义
+      "branch": "my_branch",//可选，覆盖最外层定义
+      "dest": "New/Dir",//可选，覆盖最外层定义，此时源码路径为"mgit根目录/New/Dir/Script"
+    },
+    "Some_Repo": {
+      "remote-path": "some_repo",
+      "mgit-excluded": true//指定不进行多仓库管理，可选
+    },
+    //本地git仓库或非git仓库
+    "New_Repo": {
+      "dest": "Some/Dir",
+      "mgit-excluded": true
+    }
+  }
+}
+
+--- manifest.json cache ---
+{
+  "hash":"e2d85a8b0474805365db7ac1c5961f30020675af4158c2a9407239522ff76603",//manifest.json内容的哈希
+  "cache":
+  {
+    "remote": "https://github.com/baidu",//远程仓库地址
+    "version":1,//配置文件版本
+    "branch": "master",//配置仓库当前分支
+    "dest": "Sources",//本地仓库相对mgit根目录存放路径
+    "repositories": {//源码列表，包含git仓库和非git仓库
+      "Watch": {
+        "remote-path": "watch"//远程仓库名，对于需要mgit管理的仓库是必需字段
+      },
+      "BBAAccount": {
+        "remote-path": "bbaaccount",
+        "config_repo": true//标志是否是包含配置表的配置仓库
+      },
+      "Script": {
+        "remote-path": "script",
+        "remote": "https://github.com/some_script",//可选，覆盖最外层定义
+        "branch": "my_branch",//可选，覆盖最外层定义
+        "dest": "New/Dir",//可选，覆盖最外层定义，此时源码路径为"mgit根目录/New/Dir/Script"
+      },
+      "Some_Repo": {
+        "remote-path": "some_repo",
+        "mgit-excluded": true//指定不进行多仓库管理，可选
+      },
+      //本地git仓库或非git仓库
+      "New_Repo": {
+        "dest": "Some/Dir",
+        "mgit-excluded": true
+      }
+    }
+  }
+}

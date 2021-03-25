@@ -1,0 +1,18 @@
+{
+  "remote": "https://gitee.com/baidu",
+  "version":1,
+  "mgit-excluded": false,
+  "dest": "Sources",
+  "repositories": {
+    "m-git": {
+      "abs-dest": "m-git",
+      "remote": "https://github.com",
+      "remote-path": "baidu/m-git.git",
+      "config-repo": true
+    },
+    "other_a": {
+      "remote-path": "DDParser"
+    }
+  }
+}
+
