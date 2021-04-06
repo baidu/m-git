@@ -51,7 +51,7 @@ $ mgit status             产看仓库分支超前/落后情况
 ```
 
 
-#### 3、已有仓库如何使用 MGit
+#### 3、已有多仓库如何迁移到 MGit 管理
 
 - 根据文档[配置 manifest.json](docs/config/manifest.md)
 
@@ -83,6 +83,8 @@ $ mgit status             产看仓库分支超前/落后情况
 [manifest文件介绍](docs/config/manifest.md)
 
 [配置多仓库](docs/config/config-env.md) 
+
+[使用 MGit 管理多仓库的案例](docs/use/how-to-start.md#4-mgit-) 
 
 [了解更多](docs/references.md)
 
